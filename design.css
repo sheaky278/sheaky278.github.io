@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /*overflow-x: hidden;*/
+}
+
+.sectionLogo{background:white; }
+
+.logo {
+    margin: 1rem 3rem;
+    width: 15rem;
+}
+
+.navbar {
+    color: white!important;
+    background: #8F00FF!important;
+}
+
+.navbar-brand {
+    color: white!important;
+    font-size: 2rem;
+    margin-right: 3rem;
+}
+
+a.nav-link {
+    color: white!important;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem!important;
+}
+
+.nav-link:hover {
+    color: #8F00FF!important;
+    border-radius: 5px;
+    background: white;
+}
+
+.dropdown-menu.show {     display: none; }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+ 
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #F9B4F6;
+}
+
+.dropdown-item {     font-size: 1rem; }
+
+.content {    margin: 5% auto; }
+
+.intro {
+    background: yellow;
+    border-radius: 1.5vw!important;
+}
+
+.introImg {
+    margin: auto;
+    display: block;
+    width: 20rem;
+}
+
+.try {
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.colorbar {
+    padding: 1ex;
+    position: fixed;
+    top: 33%;
+    right: 1.5%;
+    background: white;
+    transform: translateY(-50%);
+    border: 0.3ex solid #8f00ff;
+    z-index: 1;
+}
+
+.colorbar button {
+    margin: 20% auto;
+    display: block;
+    width: 5ex;
+    height: 5ex;
+    border: 0.25ex solid #8f00ff;
+}
+
+.color1 {    background-color: white;    }
+.color2 {    background-color: #F9B4F6;    }
+.color3 {    background-color: #FFFACD;    }
+.color4 {    background-color: #98ff98;    }
+
+.shadow {    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.3)!important; }
+
+.cartoon h1, .game h1 {     font-size: 2.5rem; }
+/*.cartoon h2, .innerGame h2 {     font-size: 1.75rem; }*/
+.cartoon p, .innerGame p {     font-size: 1rem; }
+
+.video { margin: 4% auto 5%; }
+.embed-responsive { margin-bottom: 2%; }
+ 
+ .other a {
+    color: black;
+}
+
+.other a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.other img {
+    margin-bottom: 2%;
+}
+
+.other .card {
+    background-color: transparent;
+    border: none;
+}
+
+.other .card-body {
+    margin: 0 4%;
+    padding: 0;
+}
+
+.other .card-back .card-body {
+    padding: 5%;
+    color: white;
+    background: #8F00FF;
+    font-size: 1rem;
+}
+
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.footer {
+    padding: 1rem;
+    background: #8F00FF;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
