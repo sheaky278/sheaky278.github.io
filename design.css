@@ -7,13 +7,6 @@ a {
     color: #0060ff;
 }
 
-body {
-    background-image: url('Image/Christmas Background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 .sectionLogo{     background:white; }
 
 .logo {
