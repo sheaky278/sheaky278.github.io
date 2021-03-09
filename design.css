@@ -8,13 +8,28 @@ a {
 }
 
 body {
-    background-image: url('Image/ChristmasBackground.png');
+    background-image: url('Image/SantaFriend.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
-.sectionLogo{     background:white; }
+audio {     width: 100%; }
+            
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+.sectionLogo{     
+    background: white; 
+    position: relative;
+    z-index: 1;
+}
 
 .logo {
     margin: 1rem 3rem;
@@ -32,9 +47,32 @@ body {
     margin-right: 3rem;
 }
 
-.content {    margin: 10% auto 5%; }
+.content {    margin: 10% auto 0; }
+            
+.imagebar {
+    padding: 1ex;
+    position: fixed;
+    top: 33%;
+    right: 1.5%;
+    background: white;
+    transform: translateY(-50%);
+    border: 0.3ex solid #8f00ff;
+    z-index: 1;
+}
 
+.imagebar button {
+    margin: 20% auto;
+    display: block;
+    width: 5ex;
+    height: 5ex;
+    border: 0.25ex solid #8f00ff;
+}
+
+.container {     overflow-x: hidden; }
 .intro {
+    margin: 0 10%;
+    padding-left: 6%;
+    padding-right: 6%;
     background: yellow;
     border-radius: 1.5vw!important;
 }
@@ -43,10 +81,12 @@ body {
     margin: auto;
     display: block;
     width: 20rem;
+    animation: jump1 2.5s linear infinite;
 }
 
 .XmasNy {
     margin: 20% auto;
+    padding: 0 12%;
 }
 
 .XmasNy img {
@@ -55,18 +95,14 @@ body {
     width: 90%;
 }
 
-.XmasNy .and {
-    width: 6%;
-}
+.XmasNy .and {     width: 6%; }
 
-.XmasNy p {
-    margin: 4%;
-}
+.XmasNy p {     margin: 4% 5%; }
 
 .merryXmas {     color: red; }
 .hny {     color: green; }
 
-.shadow {    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.3)!important; }
+.shadow {     box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.3)!important; }
 
 .bullet {
     font-size: 1rem;
@@ -75,12 +111,149 @@ body {
     margin-left: 1em;
 }
 
-.video {     margin: 4% auto !important; }
+.secKid {
+    background-image: url('Image/christmas tree.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 54% 3% 5%;
+}
+
+.entertain {
+    margin-bottom: 2%;
+    display: block;    
+}
+
+.leftKid, .rightKid {
+    margin-top: 10%;
+    animation: jump1 1.7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.middleKid {     margin-top: 30%; }
+
+.middleKid:hover {     animation: jump2 1.7s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+
+.hoverMsg {
+    display: block;
+    position: relative;
+    top: 5vw;
+}
+
+@keyframes jump1 {
+    0 { transform: translate(0, 0); }
+    50% { transform: translate(0, 10%); }
+    to { transform: translate(0, 0); }
+}
+
+@keyframes jump2 {
+    0 { transform: translate(0, 0); }
+    50% { transform: translate(0, -10%); }
+    to { transform: translate(0, 0); }
+}
+
+.txtChristmas {
+    width: 35%;
+    position: relative;
+    top: 14.5vw;
+    z-index: 1;
+    margin: auto;
+    display: block;
+}
+            
+.bgChristmas {
+    background: black;
+    overflow-x: hidden;
+}
+
+.colChristmas {     background-color: #fffaf4; }
+
+.leftChristmas, .rightChristmas {     padding: 14.5% 1%; }
+.leftChristmas {     background-image: url(Image/christmas1.png); }
+.rightChristmas {     background-image: url(Image/christmas2.png); }
+
+.leftChristmas, .rightChristmas {
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.present {
+    position: relative;
+    left: 24%;
+    top: 15%;
+}
+
+.sourcePresent {
+    animation: float 2.5s linear infinite;
+}
+
+.modal-header, .modal-footer {     background: #8f00ff; }
+            
+.modal-title {
+    font-size: 2rem;
+    color: white;
+}
+
+.modal-header span {     color: white; }
+
+.modal-body {     background: #ffdafd; }
+
+.modalSubt { 
+    margin-left: 1.5rem;
+    font-size: 1.5rem; }
+
+.modalText {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+}
+
+li.list-group-item.d-flex.align-items-center {
+    margin-left: 2rem;
+    border: none;
+    background: #ffdafd;
+}
+
+.list-group a {
+    color: darkviolet;
+}
+
+.list-group a:hover {
+    color: blue;
+}
+.secAudio {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #f1f3f4;
+}
+
+.btnModal {
+    width: 25%;
+    background: white;
+    font-size: 1rem;
+}
+
+.btnModal:hover {     background: #ffdafd; }
+            
+@keyframes float {
+    0 { transform: translate(0, 0); }
+    50% { transform: translate(0, -30%); }
+    to { transform: translate(0, 0); }
+}
+ 
+.video {
+    margin: 3% auto !important;
+    display: block;
+    width: 90%;
+    position: relative;
+    right: 50%;
+}
 .embed-responsive {     margin-bottom: 2%; }
 
 .footer {
     padding: 1rem;
     background: #8F00FF;
+    position: relative;
+    z-index: 1;
 }
 
 .footer p {
