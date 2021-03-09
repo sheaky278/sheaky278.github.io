@@ -57,7 +57,7 @@ audio {     width: 100%; }
     background: white;
     transform: translateY(-50%);
     border: 0.3ex solid #8f00ff;
-    z-index: 1;
+    z-index: 2;
 }
 
 .imagebar button {
@@ -75,6 +75,8 @@ audio {     width: 100%; }
     padding-right: 6%;
     background: yellow;
     border-radius: 1.5vw!important;
+    z-index: 1;
+    position: relative;
 }
 
 .introImg {
