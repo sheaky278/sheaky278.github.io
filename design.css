@@ -60,6 +60,8 @@ audio {     width: 100%; }
     z-index: 2;
 }
 
+.imagebar img {     height: 100%; }
+
 .imagebar button {
     margin: 20% auto;
     display: block;
